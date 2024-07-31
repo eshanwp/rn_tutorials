@@ -10,7 +10,7 @@ import config from 'react-native-config';
 console.log('env ==> ', config.STORYBOOK_ENABLED);
 
 if (config.STORYBOOK_ENABLED === 'true') {
-  const StorybookUIRoot = require('./.storybook/index').default;
+  const StorybookUIRoot = require('./.storybook-mobile/index').default;
   AppRegistry.registerComponent(appName, () => StorybookUIRoot);
 } else {
   AppRegistry.registerComponent(appName, () => App);

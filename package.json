@@ -15,7 +15,7 @@
     "install:pods": "cd ios && pod install",
     "remove:ios:build": "cd ios && rm -rf build",
     "ios:13": "react-native run-ios --simulator=\"iPhone 13\"",
-    "storybook-generate": "sb-rn-get-stories"
+    "storybook-generate": "sb-rn-get-stories -c .storybook-mobile"
   },
   "dependencies": {
     "react": "18.2.0",
