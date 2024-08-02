@@ -6,13 +6,8 @@ import {
   getProjectAnnotations,
 } from "@storybook/react-native";
 
-import "@storybook/addon-webpack5-compiler-swc/register";
-import "@storybook/addon-onboarding/register";
-import "@storybook/addon-links/register";
-import "@storybook/addon-essentials/register";
-import "@chromatic-com/storybook/register";
-import "@storybook/addon-interactions/register";
-import "@storybook/addon-react-native-web/register";
+import "@storybook/addon-ondevice-controls/register";
+import "@storybook/addon-ondevice-actions/register";
 
 const normalizedStories = [
   {
@@ -51,6 +46,7 @@ declare global {
 const annotations = [
   require("./preview"),
   require("@storybook/react-native/dist/preview"),
+  require("@storybook/addon-actions/preview"),
 ];
 
 global.STORIES = normalizedStories;
